@@ -32,12 +32,14 @@
             <table class="events">
               <tr class="header">
                 <th>Event</th>
+                <th>Date</th>
                 <th># Users attending</th>
                 <th>RSVP</th> 
               </tr>             
           
               <tr class="row">
                 <td>BYU vs Kansas St</td>
+                <td>08/20/2025</td>
                 <td>70,000</td>
                 <td>
                   <label for="attendance1">Attending:</label>
@@ -47,6 +49,7 @@
           
               <tr class="row">
                 <td>UVU Halloween Dance</td>
+                <td>10/31/2025</td>
                 <td>4</td>
                 <td>
                   <label for="attendance2">Attending:</label>
@@ -56,6 +59,7 @@
           
               <tr class="row">
                 <td>Aunt Kathy's B-day Party</td>
+                <td>05/06/2025</td>
                 <td>430</td>
                 <td>
                   <label for="attendance3">Attending:</label>
@@ -66,69 +70,45 @@
           </section>
           
 
-      <!-- More formatting with old style HTML -->
-      <br />
-
-      <div>
-        <label for="count">Score</label>
-        <input type="text" id="count" value="--" readonly />
-      </div>
-
-      <br />
-
-      <div>
-        <button>Reset</button>
-      </div>
-
-      <br />
-
-      <div>
-        <table>
-          <tr>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <!-- SVG
-                    M move <to x,y>
-                    Q quadratic curve <control point x,y> <to x,y>
-                -->
-                  <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
-                </svg>
-              </button>
-            </td>
-            <td>
-              <button>
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                  <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
-                </svg>
-              </button>
-            </td>
-          </tr>
-        </table>
-      </div>
+      <!-- Form to submit an event -->
+      <section>
+        <h2>Add an Event</h2>
+        <form action="/submit-event" method="POST">
+          <ul>
+            <li>
+              <label for="eventName">Event Name:</label><br>
+              <input type="text" id="eventName" name="eventName" required />
+            </li>
+      
+            <li>
+              <label for="eventDate">Date:</label><br>
+              <input type="date" id="eventDate" name="eventDate" required />
+            </li>
+      
+            <li>
+              <label for="eventTime">Time:</label><br>
+              <input type="time" id="eventTime" name="eventTime" required />
+            </li>
+      
+            <li>
+              <label for="eventDetails">Details:</label><br>
+              <textarea id="eventDetails" name="eventDetails" rows="4" cols="40" placeholder="Optional notes or description..."></textarea>
+            </li>
+      
+            <li>
+              <button type="submit">Add Event</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+      
     </main>
 
     <footer>
       <hr />
-      <span class="text-reset">Author Name(s)</span>
+      <span class="text-reset">Dakota Clubb</span>
       <br />
-      <a href="https://github.com/webprogramming260/simon-html">GitHub</a>
+      <a href="https://github.com/daclubb7916/startup">GitHub</a>
     </footer>
   </body>
 </html>
