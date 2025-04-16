@@ -14,7 +14,9 @@ export default function App() {
         <div className="body bg-light text-dark"> 
         <header className="container-fluid">
           <nav className="navbar fixed-top navbar-dark bg-primary">
-            <a className="navbar-brand" href="#">Thats Whats Up<sup>&reg;</sup></a>
+          <div className="navbar-brand">
+              Thats Whats Up<sup>&reg;</sup>
+            </div>
             <menu className="navbar-nav">
               <li className="nav-item">
               <NavLink className='nav-link' to="">Login</NavLink>
@@ -27,22 +29,25 @@ export default function App() {
                 </li>
             </menu>
           </nav>
-          <hr />
+          
         </header>
-  
+        
+        
         <Routes>
         <Route path='/' element={<Login />} exact />
         <Route path='/all_events' element={<All_Events />} />
         <Route path='/my_events' element={<My_Events />} />
         <Route path='*' element={<NotFound />} />
         </Routes>
+        
   
-        <footer className="bg-primary text-light">
-      <div className="container-fluid">
-      <span className="text-reset">Dakota Clubb</span>
-      <a className="text-center text-light" href="https://github.com/daclubb7916/startup">GitHub</a>
-    </div>
+        <footer className="bg-primary text-light mt-auto py-2">
+        <div className="container-fluid d-flex justify-content-between align-items-center">
+        <span className="text-reset">Dakota Clubb</span>
+        <a className="text-light" href="https://github.com/daclubb7916/startup">GitHub</a>
+        </div>
     </footer>
+
     </div>
     </BrowserRouter>
     );
