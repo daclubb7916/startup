@@ -1,10 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
 
+.split {
+    flex: 1;
+  display: flex;
+  flex-direction: row;
+}
 
 section:nth-child(1) {
-    flex: 1;
-    background-color: hsl(180, 10%, 80%);
-  }
-  section:nth-child(2) {
     flex: 3;
     background-color: white;
+  }
+section:nth-child(2) {
+    flex: 1;
+    background-color: hsl(180, 10%, 80%);
   }
