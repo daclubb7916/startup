@@ -53,3 +53,12 @@ git branch "name" = creates a new branch
 ## Notes on your Server
 URL - http://18.235.63.214
 
+## CSS Notes:
+.(class) - class selector
+
+#id - id selector (All id's should be unique)
+
+a[href='(ref)'] - attribute selector
+
+### Bootstrap install
+npm install bootstrap@5.3.3
