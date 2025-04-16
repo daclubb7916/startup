@@ -9,7 +9,7 @@ import { My_Events } from './my_events/my_events';
 
 export default function App() {
     return (
-        // I might need to replace body with div
+        
         <BrowserRouter>
         <div className="body bg-light text-dark"> 
         <header className="container-fluid">
