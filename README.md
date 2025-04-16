@@ -62,15 +62,15 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
-- [ ] **DB data placeholder** - I did not complete this part of the deliverable.
-- [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
+- [x] **HTML pages** - I created my three html pages. index.html for login, all_events.html to list all events, and my_events.html to list saved events
+- [x] **Proper HTML element usage** - I used HTML tags appropriately - header for headers, body for the entire body, footer for footers, main for the main section of the web page, and nav for the navigation section
+- [x] **Links** - Links to the different pages were included in the navigation section
+- [x] **Text** - Lists of Events and the Add event sections included appropriate and descriptive text
+- [x] **3rd party API placeholder** - I added a placeholder for weather data in event data in the list of saved events
+- [x] **Images** - I added a profile picture in the 'saved events' page that will apply to everyone
+- [x] **Login placeholder** - Placeholders for login info were added
+- [x] **DB data placeholder** - I added a placeholder for all events and a user's saved events
+- [x] **WebSocket placeholder** - Events added to all events will be listed in real time, as well as updates to the number of users attending. 
 
 ## 🚀 CSS deliverable
 
